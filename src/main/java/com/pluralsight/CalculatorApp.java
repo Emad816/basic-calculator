@@ -22,16 +22,19 @@ public class CalculatorApp {
         double answer;
         if (task == 'A'){
             answer = num1 + num2;
+            System.out.printf("%.2f + %.2f = %.2f",num1 ,num2 ,answer);
         } else if (task == 'S') {
             answer = num1 - num2;
+            System.out.printf("%.2f - %.2f = %.2f",num1 ,num2 ,answer);
         } else if (task == 'M') {
             answer = num1 * num2;
+            System.out.printf("%.2f * %.2f = %.2f",num1 ,num2 ,answer);
         } else if (task == 'D') {
             answer = num1 / num2;
+            System.out.printf("%.2f / %.2f = %.2f",num1 ,num2 ,answer);
         }else {
             System.out.println("Invalid Choice.");
         }
-        System.out.println();
 
     }
 }
